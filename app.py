@@ -5,10 +5,12 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
 
 # Database connection
+# for mysql use name run query( SELECT USER(); )
+# -- This query will return a result like 'username'@'hostname'.
 conn = mysql.connector.connect(
     host="localhost",
-    user="root",
-    password="Ab@6367802080",
+    user="your_my_sql_server_ussername",
+    password="your_my_sql_server_password",
     database="gym_management_system"
 )
 
